@@ -28,8 +28,8 @@ This is my repo for ATLS2200.
 
 ## Weekly Assignments
 
-- WA1
-- WA2
+- [WA1](https://github.com/will15ham/will15ham.github.io/blob/main/wa/wa1.html)
+- [WA2](https://github.com/will15ham/will15ham.github.io/blob/main/wa/wa2.html)
 - WA3
 - WA4
 - WA5
