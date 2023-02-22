@@ -16,7 +16,7 @@ This is my repo for ATLS2200.
 - [ICA3b](https://will15ham.github.io/ica/ica3b.html)
 - [ICA4](https://will15ham.github.io/ica/ica4.html)
 - [ICA5](https://will15ham.github.io/ica/ica5.html)
-- ICA6
+- [ICA6](https://will15ham.github.io/ica/ica6/ica6-part1.html.html)
 - ICA7
 - ICA8
 - ICA9
