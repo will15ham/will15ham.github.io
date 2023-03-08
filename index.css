@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Outfit', sans-serif; 
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  width: 100;
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: clamp(2.5rem, 10rem, 3rem);
+}
+
+header img {
+  border-radius: 50%;
+  width: 50%;
+  max-width: 300px;
+  max-height: 300px;
+  aspect-ratio: 1!important;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0.5rem 0 0 0 #d6c9ee, 1rem 0 0 0 #e0d6f1, 1.5rem 0 0 #ebe5f4;
+}
+
+header .profile-block {
+  display: block;
+  width: 50%;
+  padding-left: 5rem;
+}
+
+header .profile-block h3 {
+  font-size: 2rem;
+  line-height: .5rem;
+  font-weight: 300;
+}
+
+
+header .profile-block h3 b {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 500;
+}
+
+
+header .profile-block h2 {
+  font-size: 5rem;
+  line-height: .5rem;
+  font-weight: 500;
+  color: #7b46d7;
+}
+
+.noted {
+  color: #7b46d7;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-inline: .5rem;
+  border-radius: 30px;
+  background-color: #ebe5f4;
+  padding: .5rem 1.5rem;
+  color: #7b46d7;
+  font-weight: 500;
+}
+
+nav a:first-of-type {
+  margin-left: 0;
+}
+
+nav a:last-of-type {
+  margin-right: 0;
+}
+
+.btn {
+  border-radius: 30px;
+  background-color: #7b46d7;
+  padding: .5rem 1.5rem;
+  text-transform: UPPERCASE;
+  color: white;
+}
+
+@media (max-width: 767px) {
+    nav {
+      flex-direction: column;
+    }
+    
+    nav a {
+      margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 767px) {
+header {
+    flex-direction: column;
+}
+
+header img {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+header .profile-block {
+    width: 100%;
+    padding-left: 0;
+}
+}
+  
