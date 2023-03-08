@@ -89,7 +89,7 @@ nav a:last-of-type {
   color: white;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     nav {
       flex-direction: column;
     }
@@ -99,7 +99,7 @@ nav a:last-of-type {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
 header {
     flex-direction: column;
 }
