@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <button id="plus-one-button">Click me to add 1!</button>
     <p id="counter"></p>
     <script>
-        let count = 0;
-        document.getElementById("plus-one-button").addEventListener("click", function() {
-            count++;
-            document.getElementById("counter").innerHTML = count;
+      let count = 0;
+      document
+        .getElementById("plus-one-button")
+        .addEventListener("click", function () {
+          count++;
+          document.getElementById("counter").innerHTML = count;
         });
     </script>
 
-    <button id="generate-random-number">
-        Generate a random number
-    </button>
+    <button id="generate-random-number">Generate a random number</button>
 
     <p id="random-number"></p>
 
     <script>
-        let randomNumberP = document.getElementById("random-number").innerHTML;
-        document.getElementById("generate-random-number").addEventListener("click", function() {
-            let randomNumber = Math.floor(Math.random() * 100);
-            document.getElementById("random-number").innerHTML = randomNumber;
+      let randomNumberP = document.getElementById("random-number").innerHTML;
+      document
+        .getElementById("generate-random-number")
+        .addEventListener("click", function () {
+          let randomNumber = Math.floor(Math.random() * 100);
+          document.getElementById("random-number").innerHTML = randomNumber;
         });
     </script>
-    
-
-
-</body>
+  </body>
 </html>
