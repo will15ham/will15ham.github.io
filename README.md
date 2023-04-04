@@ -39,7 +39,7 @@ This is my repo for ATLS2200.
 - WA8
 - [WA9](https://will15ham.github.io/wa/wa9.html)
 - [WA10](https://will15ham.github.io/wa/assignment9.html)
-- WA11
+- [WA11](https://will15ham.github.io/wa/wa11.html)
 - WA12
 - WA13
 - WA14

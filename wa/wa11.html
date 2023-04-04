@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/wa11.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <header>Request info:</header>
+      <section class="quotes">
+        <div class="quote-text" id="js-quote-text"></div>
+        <div class="quote-tex" id="js-ip-text"></div>
+      </section>
+      <p style="padding: 30px">
+        I decided to use an API that returns info on the requests it recieves.
+        Here we can see an example of generating a random user-agent and sending
+        it to the API. Also the API has another endpoint that returns IP
+        address. This can be useful when trying to build a request client that
+        needs to match the browser, this api would allow you to see the request
+        method, headers you are sending, body, and even some of the TLS specs.
+      </p>
+      <section class="controls">
+        <button type="button" id="js-new-quote" class="new-quote button">
+          Randomize User-Agent
+        </button>
+        <a class="twitter button" id="js-tweet" target="_blank" rel="noreferrer"
+          >Get IP</a
+        >
+      </section>
+    </div>
+    <script src="/js/wa11.js"></script>
+  </body>
+</html>
