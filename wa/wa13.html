@@ -10,6 +10,47 @@
     <script defer src="/js/wa13.js"></script>
   </head>
   <body>
+    <script>
+      navigator.mediaDevices
+        .getUserMedia({
+          audio: true,
+        })
+        .then(function (stream) {
+          const audioContext = new AudioContext();
+          const analyser = audioContext.createAnalyser();
+          const microphone = audioContext.createMediaStreamSource(stream);
+          const scriptProcessor = audioContext.createScriptProcessor(
+            2048,
+            1,
+            1
+          );
+
+          analyser.smoothingTimeConstant = 0.8;
+          analyser.fftSize = 1024;
+
+          microphone.connect(analyser);
+          analyser.connect(scriptProcessor);
+          scriptProcessor.connect(audioContext.destination);
+          scriptProcessor.onaudioprocess = function () {
+            const array = new Uint8Array(analyser.frequencyBinCount);
+            analyser.getByteFrequencyData(array);
+            const arraySum = array.reduce((a, value) => a + value, 0);
+            const average = arraySum / array.length;
+            let volume = Math.round(average);
+            if (volume > 100) {
+              volume = 100;
+            }
+            const slider = document.getElementById("myRange2");
+            const textVolume = document.querySelector(".output2");
+            textVolume.innerHTML = volume;
+            slider.value = Math.round(volume);
+          };
+        })
+        .catch(function (err) {
+          /* handle the error */
+          console.error(err);
+        });
+    </script>
     <div>
       <p>Please selet the volume you'd like.</p>
       <p class="output">50</p>
@@ -61,6 +102,15 @@
         />
         <p class="slider-output"></p>
       </div>
+    </div>
+    <p>The worst volume changer:</p>
+    <p>
+      The volume of this slider is based on the sound input from your
+      microphone.
+    </p>
+    <div>
+      <input type="range" min="0" max="100" class="slider" id="myRange2" />
+      <p class="output2">0</p>
     </div>
   </body>
 </html>
