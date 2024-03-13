@@ -1,25 +1,25 @@
 .parent {
-    position: relative;
-    width: 67%;
-    margin: auto;
+  position: relative;
+  /* width: 67%; */
+  margin: auto;
 }
 
 .first {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 
 .first img {
-    width: 20%;
-    float: left;
+  width: 20%;
+  float: left;
 }
 
 .second {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 }
 
 .second img {
-    width: 30%;
-    float: right;
+  width: 30%;
+  float: right;
 }
